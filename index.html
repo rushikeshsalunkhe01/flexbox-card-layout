@@ -3,40 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laptop Cards Layout</title>
+    <title>Flexbox Card Layouts - Justify Content</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="card-container">
-        <div class="card">
-            <img src="/img/Laptop-Model-1.jpg" alt="Laptop 1" class="card-img">
-            <div class="card-content">
-                <h2 class="card-title">Laptop Model 1</h2>
-                <p class="card-description">Features: Intel i7, 16GB RAM, 512GB SSD, 15.6" Full HD Display.</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="./img/Laptop-Model-2.jpg" alt="Laptop 2" class="card-img">
-            <div class="card-content">
-                <h2 class="card-title">Laptop Model 2</h2>
-                <p class="card-description">Features: AMD Ryzen 5, 8GB RAM, 256GB SSD, 14" HD Display.</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="/img/Laptop-Model-3.jpg" alt="Laptop 3" class="card-img">
-            <div class="card-content">
-                <h2 class="card-title">Laptop Model 3</h2>
-                <p class="card-description">Features: Apple M1, 8GB RAM, 256GB SSD, 13.3" Retina Display.</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="/img/Laptop-Model-4.jpg" alt="Laptop 4" class="card-img">
-            <div class="card-content">
-                <h2 class="card-title">Laptop Model 4</h2>
-                <p class="card-description">Features: Intel i9, 32GB RAM, 1TB SSD, 17.3" 4K Display.</p>
-            </div>
-        </div>
+    <div class="container">
+        <h1>Flexbox Layouts - Justify Content</h1>
         
+        <section class="layout">
+            <h2>Justify Content: Flex Start</h2>
+            <div class="card-container flex-start">
+                <div class="card">
+                    <img src="./img/Laptop-Model-1.jpg" alt="Laptop Model 1" class="card-img">
+                    <div class="card-content">
+                        <h2 class="card-title">Laptop Model 1</h2>
+                        <p class="card-description">Model: LM1<br>RAM: 8 GB<br>Storage: 256 GB SSD</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./img/Laptop-Model-5.jpg" alt="Laptop Model 2" class="card-img">
+                    <div class="card-content">
+                        <h2 class="card-title">Laptop Model 2</h2>
+                        <p class="card-description">Model: LM2<br>RAM: 16 GB<br>Storage: 512 GB SSD</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="layout">
+            <h2>Justify Content: Center</h2>
+            <div class="card-container center">
+                <div class="card">
+                    <img src="./img/Laptop-Model-7.jpg" alt="Laptop Model 3" class="card-img">
+                    <div class="card-content">
+                        <h2 class="card-title">Laptop Model 3</h2>
+                        <p class="card-description">Model: LM3<br>RAM: 8 GB<br>Storage: 1 TB HDD</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./img/Laptop-Model-8.jpg" alt="Laptop Model 4" class="card-img">
+                    <div class="card-content">
+                        <h2 class="card-title">Laptop Model 4</h2>
+                        <p class="card-description">Model: LM4<br>RAM: 16 GB<br>Storage: 1 TB SSD</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="layout">
+            <h2>Justify Content: Flex End</h2>
+            <div class="card-container flex-end">
+                <div class="card">
+                    <img src="./img/Laptop-Model-4.jpg" alt="Laptop Model 5" class="card-img">
+                    <div class="card-content">
+                        <h2 class="card-title">Laptop Model 5</h2>
+                        <p class="card-description">Model: LM5<br>RAM: 4 GB<br>Storage: 128 GB SSD</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./img/Laptop-Model-6.jpg" alt="Laptop Model 6" class="card-img">
+                    <div class="card-content">
+                        <h2 class="card-title">Laptop Model 6</h2>
+                        <p class="card-description">Model: LM6<br>RAM: 8 GB<br>Storage: 256 GB SSD</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="layout">
+            <h2>Justify Content: Space Between</h2>
+            <div class="card-container space-between">
+                <div class="card">
+                    <img src="./img/Laptop-Model-7.jpg" alt="Laptop Model 7" class="card-img">
+                    <div class="card-content">
+                        <h2 class="card-title">Laptop Model 7</h2>
+                        <p class="card-description">Model: LM7<br>RAM: 12 GB<br>Storage: 512 GB SSD</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./img/Laptop-Model-6.jpg" alt="Laptop Model 8" class="card-img">
+                    <div class="card-content">
+                        <h2 class="card-title">Laptop Model 8</h2>
+                        <p class="card-description">Model: LM8<br>RAM: 16 GB<br>Storage: 1 TB SSD</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="layout">
+            <h2>Justify Content: Space Around</h2>
+            <div class="card-container space-around">
+                <div class="card">
+                    <img src="./img/Laptop-Model-9.jpg" alt="Laptop Model 9" class="card-img">
+                    <div class="card-content">
+                        <h2 class="card-title">Laptop Model 9</h2>
+                        <p class="card-description">Model: LM9<br>RAM: 8 GB<br>Storage: 256 GB SSD</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./img/Laptop-Model-10.jpg" alt="Laptop Model 10" class="card-img">
+                    <div class="card-content">
+                        <h2 class="card-title">Laptop Model 10</h2>
+                        <p class="card-description">Model: LM10<br>RAM: 12 GB<br>Storage: 512 GB SSD</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="layout">
+            <h2>Justify Content: Space Evenly</h2>
+            <div class="card-container space-evenly">
+                <div class="card">
+                    <img src="./img/Laptop-Model-11.jpg" alt="Laptop Model 11" class="card-img">
+                    <div class="card-content">
+                        <h2 class="card-title">Laptop Model 11</h2>
+                        <p class="card-description">Model: LM11<br>RAM: 16 GB<br>Storage: 1 TB SSD</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./img/Laptop-Model-12.jpg" alt="Laptop Model 12" class="card-img">
+                    <div class="card-content">
+                        <h2 class="card-title">Laptop Model 12</h2>
+                        <p class="card-description">Model: LM12<br>RAM: 32 GB<br>Storage: 2 TB SSD</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </div>
 </body>
 </html>
